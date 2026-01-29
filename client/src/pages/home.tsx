@@ -23,7 +23,7 @@ const SERVICES = [
     bullets: ["Template & install", "Backsplash-ready edges", "Care guidance"],
   },
   {
-    title: "Basement Finish Outs",
+    title: "California Custom Closets",
     description:
       "From framing to final trim—comfortable spaces that feel like the rest of your home.",
     bullets: ["Drywall & paint", "Built-ins & storage", "Detail finishing"],
@@ -31,7 +31,7 @@ const SERVICES = [
 ] as const;
 
 const STATS = [
-  { label: "Project types", value: "Kitchens • Basements • Tops" },
+  { label: "Project types", value: "Kitchens • Closets • Tops" },
   { label: "Focus", value: "Craftsmanship & clean lines" },
   { label: "Service", value: "Clear quotes, tight timelines" },
 ] as const;
@@ -155,7 +155,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge>Cabinets • Countertops • Basement finish outs</Badge>
+              <Badge>Cabinets • Countertops • Custom Closets</Badge>
 
               <h1
                 data-testid="text-hero-title"
@@ -170,7 +170,7 @@ export default function HomePage() {
               >
                 Galaxy Kitchen Cabinets Ltd. delivers clean installs, thoughtful details,
                 and finishes that hold up. We specialize in kitchen cabinet renovations,
-                countertops, and basement finish outs.
+                countertops, Custom Closets, and TV console renovations.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -311,7 +311,7 @@ export default function HomePage() {
                     data-testid="text-cta-title"
                     className="text-balance font-serif text-2xl tracking-tight sm:text-3xl"
                   >
-                    Ready to upgrade your kitchen or basement?
+                    Ready to upgrade your kitchen or closets?
                   </h3>
                   <p
                     data-testid="text-cta-subtitle"
@@ -386,7 +386,7 @@ export default function HomePage() {
                 data-testid="text-footer-tagline"
                 className="mt-1 text-xs text-muted-foreground"
               >
-                Cabinets • Countertops • Basement finish outs
+                Cabinets • Countertops • Custom Closets • TV Consoles
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm">

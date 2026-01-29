@@ -19,7 +19,7 @@ import imgKitchenCabinets from "@/assets/images/kitchen_cabinets.png";
 type PortfolioItem = {
   id: string;
   title: string;
-  category: "Cabinets" | "Countertops" | "Basements";
+  category: "Cabinets" | "Countertops" | "Custom Closets" | "TV Consoles";
   location: string;
   details: string[];
   image: string;
@@ -49,7 +49,7 @@ const ITEMS: PortfolioItem[] = [
   {
     id: "base-01",
     title: "Cozy basement family room",
-    category: "Basements",
+    category: "Custom Closets",
     location: "Residential",
     details: ["Built-in storage", "Drywall + paint", "Trim finish"],
     image: imgFamilyRoom,
@@ -73,7 +73,7 @@ const ITEMS: PortfolioItem[] = [
   {
     id: "base-02",
     title: "Basement bar + kitchenette",
-    category: "Basements",
+    category: "Custom Closets",
     location: "Residential",
     details: ["Cabinet run", "Counter install", "Feature lighting"],
     image: imgBar,
@@ -192,7 +192,7 @@ export default function PortfolioPage() {
             data-testid="text-portfolio-subtitle"
             className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base"
           >
-            A few representative projects across cabinets, countertops, and basement finish outs.
+            A few representative projects across cabinets, countertops, custom closets, and basement finish outs.
           </p>
         </motion.div>
 
@@ -307,7 +307,7 @@ export default function PortfolioPage() {
                 data-testid="text-footer-tagline"
                 className="mt-1 text-xs text-muted-foreground"
               >
-                Cabinets • Countertops • Basement finish outs
+                Cabinets • Countertops • Custom closets • TV Consoles
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm">

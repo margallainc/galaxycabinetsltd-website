@@ -15,7 +15,7 @@ const formSchema = z.object({
   name: z.string().min(2, "Please enter your name"),
   email: z.string().email("Please enter a valid email"),
   phone: z.string().min(10, "Please enter your phone number"),
-  service: z.enum(["Cabinets", "Countertops", "Basement finish out", "Not sure"]),
+  service: z.enum(["Cabinets", "Countertops", "Custom Closets", "TV Consoles", "Not sure"]),
   message: z.string().min(10, "Please add a bit more detail"),
 });
 
@@ -230,7 +230,8 @@ export default function ContactPage() {
                     >
                       <option value="Cabinets">Kitchen cabinet renovations</option>
                       <option value="Countertops">Countertops</option>
-                      <option value="Basement finish out">Basement finish out</option>
+                      <option value="Custom Closets">Custom closets</option>
+                      <option value="TV Consoles">TV Consoles</option>
                       <option value="Not sure">Not sure yet</option>
                     </select>
                   </div>
@@ -354,7 +355,7 @@ export default function ContactPage() {
                 data-testid="text-footer-tagline"
                 className="mt-1 text-xs text-muted-foreground"
               >
-                Cabinets • Countertops • Basement finish outs
+                Cabinets • Countertops • Custom Closets • TV Consoles
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm">
