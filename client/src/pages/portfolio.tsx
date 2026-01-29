@@ -80,7 +80,7 @@ const ITEMS: PortfolioItem[] = [
   },
 ];
 
-const FILTERS = ["All", "Cabinets", "Countertops", "Basements"] as const;
+const FILTERS = ["All", "Cabinets", "Countertops", "Custom Closets", "TV Consoles"] as const;
 
 function Pill({
   active,
