@@ -17,7 +17,7 @@ export default function NotFound() {
             data-testid="text-notfound-subtitle"
             className="mt-2 text-sm text-muted-foreground"
           >
-            The page youre looking for doesnt exist.
+            The page you're looking for doesn't exist.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" data-testid="button-notfound-home">

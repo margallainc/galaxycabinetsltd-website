@@ -9,7 +9,7 @@ const SERVICES = [
   {
     title: "Kitchen Cabinet Renovations",
     description:
-      "Refresh, reface, or rebuild\u2014tailored layouts, durable finishes, and clean installs.",
+      "Refresh, reface, or rebuild—tailored layouts, durable finishes, and clean installs.",
     bullets: [
       "Design guidance",
       "Soft-close hardware",
@@ -25,13 +25,13 @@ const SERVICES = [
   {
     title: "Basement Finish Outs",
     description:
-      "From framing to final trim\u2014comfortable spaces that feel like the rest of your home.",
+      "From framing to final trim—comfortable spaces that feel like the rest of your home.",
     bullets: ["Drywall & paint", "Built-ins & storage", "Detail finishing"],
   },
 ] as const;
 
 const STATS = [
-  { label: "Project types", value: "Kitchens \u2022 Basements \u2022 Tops" },
+  { label: "Project types", value: "Kitchens • Basements • Tops" },
   { label: "Focus", value: "Craftsmanship & clean lines" },
   { label: "Service", value: "Clear quotes, tight timelines" },
 ] as const;
@@ -155,13 +155,13 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge>Cabinets \u2022 Countertops \u2022 Basement finish outs</Badge>
+              <Badge>Cabinets • Countertops • Basement finish outs</Badge>
 
               <h1
                 data-testid="text-hero-title"
                 className="mt-5 text-balance font-serif text-4xl leading-[1.05] tracking-tight sm:text-5xl"
               >
-                Renovations that feel custom\u2014because they are.
+                Renovations that feel custom—because they are.
               </h1>
 
               <p
@@ -317,7 +317,7 @@ export default function HomePage() {
                     data-testid="text-cta-subtitle"
                     className="mt-2 max-w-2xl text-sm text-white/80"
                   >
-                    Tell us what you\u2019re building. We\u2019ll respond with next steps and a clear path
+                    Tell us what you're building. We'll respond with next steps and a clear path
                     from idea to finish.
                   </p>
                 </div>
@@ -353,7 +353,7 @@ export default function HomePage() {
                 data-testid="text-mini-contact-subtitle"
                 className="mt-1 text-sm text-muted-foreground"
               >
-                Prefer a quick call? We\u2019re happy to talk through your project.
+                Prefer a quick call? We're happy to talk through your project.
               </div>
             </div>
             <div className="flex flex-col gap-2 sm:items-end">
@@ -370,7 +370,7 @@ export default function HomePage() {
                 data-testid="link-mini-contact"
                 className="text-sm text-white/90 underline-offset-4 hover:underline"
               >
-                Or send a message \u2192
+                Or send a message →
               </Link>
             </div>
           </div>
@@ -386,7 +386,7 @@ export default function HomePage() {
                 data-testid="text-footer-tagline"
                 className="mt-1 text-xs text-muted-foreground"
               >
-                Cabinets \u2022 Countertops \u2022 Basement finish outs
+                Cabinets • Countertops • Basement finish outs
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm">

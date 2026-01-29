@@ -285,7 +285,7 @@ export default function PortfolioPage() {
               data-testid="text-portfolio-cta-subtitle"
               className="mt-2 text-sm text-muted-foreground"
             >
-              Share a few details and well follow up with next steps.
+              Share a few details and we'll follow up with next steps.
             </p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" data-testid="button-portfolio-contact">
@@ -313,7 +313,7 @@ export default function PortfolioPage() {
                 data-testid="text-footer-tagline"
                 className="mt-1 text-xs text-muted-foreground"
               >
-                Cabinets    Countertops    Basement finish outs
+                Cabinets • Countertops • Basement finish outs
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm">

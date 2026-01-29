@@ -40,7 +40,7 @@ export default function ContactPage() {
     toast({
       title: "Message ready to send",
       description:
-        "This is a static site demo. Your message isn\u2019t being sent yet, but your details are captured in the browser.",
+        "This is a static site demo. Your message isn't being sent yet, but your details are captured in the browser.",
     });
 
     // Keep it frontend-only: no API calls.
@@ -125,7 +125,7 @@ export default function ContactPage() {
             data-testid="text-contact-subtitle"
             className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base"
           >
-            Tell us what you\u2019re planning. We\u2019ll reply with next steps and a clear quote.
+            Tell us what you're planning. We'll reply with next steps and a clear quote.
           </p>
         </motion.div>
 
@@ -259,7 +259,7 @@ export default function ContactPage() {
                   data-testid="text-form-note"
                   className="text-xs text-muted-foreground"
                 >
-                  We\u2019ll respond within 1\u20132 business days.
+                  We'll respond within 1–2 business days.
                 </div>
                 <Button
                   type="submit"
@@ -312,7 +312,7 @@ export default function ContactPage() {
                   Hours
                 </div>
                 <div data-testid="text-hours" className="mt-1 text-sm font-semibold">
-                  Mon\u2013Fri \u00b7 8am\u20135pm
+                  Mon–Fri · 8am–5pm
                 </div>
               </div>
             </Card>
@@ -325,10 +325,10 @@ export default function ContactPage() {
                 What to include
               </div>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li data-testid="row-faq-1">\u2022 Photos of the space (optional)</li>
-                <li data-testid="row-faq-2">\u2022 Rough measurements (if you have them)</li>
-                <li data-testid="row-faq-3">\u2022 Ideal timeline</li>
-                <li data-testid="row-faq-4">\u2022 Material preferences</li>
+                <li data-testid="row-faq-1">• Photos of the space (optional)</li>
+                <li data-testid="row-faq-2">• Rough measurements (if you have them)</li>
+                <li data-testid="row-faq-3">• Ideal timeline</li>
+                <li data-testid="row-faq-4">• Material preferences</li>
               </ul>
             </Card>
           </div>
@@ -344,7 +344,7 @@ export default function ContactPage() {
                 data-testid="text-footer-tagline"
                 className="mt-1 text-xs text-muted-foreground"
               >
-                Cabinets \u2022 Countertops \u2022 Basement finish outs
+                Cabinets • Countertops • Basement finish outs
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm">
