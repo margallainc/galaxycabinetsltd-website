@@ -239,7 +239,7 @@ export default function HomePage() {
                 data-testid="img-hero"
                 src={heroImage}
                 alt="Modern kitchen renovation"
-                className="h-[340px] w-full object-cover sm:h-[420px]"
+                className="h-[340px] w-full object-contain sm:h-[420px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-black/0" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">

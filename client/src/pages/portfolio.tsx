@@ -5,8 +5,16 @@ import {
   ArrowUpRight,
   Sparkles,
 } from "lucide-react";
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+
+import imgBar from "@/assets/images/bar.png";
+import imgClosets from "@/assets/images/closets.png";
+import imgConsole from "@/assets/images/console.png";
+import imgCountertops from "@/assets/images/countertops.png";
+import imgFamilyRoom from "@/assets/images/family_roon.png";
+import imgKitchenCabinets from "@/assets/images/kitchen_cabinets.png";
 
 type PortfolioItem = {
   id: string;
@@ -14,6 +22,7 @@ type PortfolioItem = {
   category: "Cabinets" | "Countertops" | "Basements";
   location: string;
   details: string[];
+  image: string;
 };
 
 const ITEMS: PortfolioItem[] = [
@@ -27,6 +36,7 @@ const ITEMS: PortfolioItem[] = [
       "Trim alignment + clean reveals",
       "Hardware upgrade",
     ],
+    image: imgKitchenCabinets,
   },
   {
     id: "tops-01",
@@ -34,6 +44,7 @@ const ITEMS: PortfolioItem[] = [
     category: "Countertops",
     location: "Residential",
     details: ["Template + install", "Sink cutout", "Edge polish"],
+    image: imgCountertops,
   },
   {
     id: "base-01",
@@ -41,6 +52,7 @@ const ITEMS: PortfolioItem[] = [
     category: "Basements",
     location: "Residential",
     details: ["Built-in storage", "Drywall + paint", "Trim finish"],
+    image: imgFamilyRoom,
   },
   {
     id: "kitchen-02",
@@ -48,6 +60,7 @@ const ITEMS: PortfolioItem[] = [
     category: "Cabinets",
     location: "Residential",
     details: ["Upper/lower contrast", "Integrated pulls", "Floating shelves"],
+    image: imgClosets,
   },
   {
     id: "tops-02",
@@ -55,6 +68,7 @@ const ITEMS: PortfolioItem[] = [
     category: "Countertops",
     location: "Residential",
     details: ["Budget-friendly", "Clean seams", "Backsplash-ready"],
+    image: imgConsole,
   },
   {
     id: "base-02",
@@ -62,6 +76,7 @@ const ITEMS: PortfolioItem[] = [
     category: "Basements",
     location: "Residential",
     details: ["Cabinet run", "Counter install", "Feature lighting"],
+    image: imgBar,
   },
 ];
 
@@ -211,13 +226,13 @@ export default function PortfolioPage() {
                   className="card-surface group rounded-3xl overflow-hidden"
                 >
                   <div className="relative">
-                    <div
+                    <img
                       data-testid={`img-portfolio-${item.id}`}
-                      className="h-40 w-full bg-[radial-gradient(700px_200px_at_10%_20%,hsl(var(--accent)_/_0.18),transparent_55%),radial-gradient(600px_220px_at_85%_0%,hsl(var(--primary)_/_0.12),transparent_60%),linear-gradient(180deg,hsl(var(--background)),hsl(var(--card)))]"
+                      src={item.image}
+                      alt={item.title}
+                      className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute left-4 top-4 rounded-full bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-                      <span data-testid={`text-portfolio-category-${item.id}`}>{item.category}</span>
-                    </div>
+
                     <div className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full bg-background/70 backdrop-blur transition-transform duration-300 group-hover:rotate-6 group-hover:scale-105">
                       <ArrowUpRight className="h-4 w-4" />
                     </div>
