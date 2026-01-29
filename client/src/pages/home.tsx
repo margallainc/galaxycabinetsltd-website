@@ -96,7 +96,7 @@ export default function HomePage() {
             data-testid="link-home"
             className="group inline-flex items-center gap-2"
           >
-            <span className="grid h-9 w-9 place-items-center rounded-xl border bg-card/70 shadow-sm backdrop-blur">
+            <span className="grid h-9 w-9 place-items-center rounded-xl border bg-card/100 shadow-sm backdrop-blur">
               <span className="font-serif text-lg tracking-tight">G</span>
             </span>
             <div className="leading-tight">
