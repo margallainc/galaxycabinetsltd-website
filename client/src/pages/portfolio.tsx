@@ -193,7 +193,6 @@ export default function PortfolioPage() {
             className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base"
           >
             A few representative projects across cabinets, countertops, and basement finish outs.
-            (Photos can be added anytime.)
           </p>
         </motion.div>
 
