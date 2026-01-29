@@ -3,10 +3,6 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import {
   ArrowUpRight,
-  Layers,
-  LayoutGrid,
-  Paintbrush,
-  Ruler,
   Sparkles,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -228,10 +224,7 @@ export default function PortfolioPage() {
                   </div>
 
                   <div className="p-5">
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <LayoutGrid className="h-3.5 w-3.5" />
-                      <span data-testid={`text-portfolio-location-${item.id}`}>{item.location}</span>
-                    </div>
+
 
                     <div className="mt-2 flex items-start justify-between gap-3">
                       <h3
@@ -255,20 +248,7 @@ export default function PortfolioPage() {
                       ))}
                     </ul>
 
-                    <div className="mt-5 flex items-center gap-2 text-xs text-muted-foreground">
-                      <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-1">
-                        <Ruler className="h-3.5 w-3.5" />
-                        Precision
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-1">
-                        <Layers className="h-3.5 w-3.5" />
-                        Durable
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-1">
-                        <Paintbrush className="h-3.5 w-3.5" />
-                        Clean finish
-                      </span>
-                    </div>
+
                   </div>
                 </Card>
               </motion.div>

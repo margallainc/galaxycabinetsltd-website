@@ -192,7 +192,7 @@ export default function HomePage() {
                 <a
                   data-testid="link-hero-phone"
                   href="tel:+1-587-703-1010"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground whitespace-nowrap"
                 >
                   <Phone className="h-4 w-4" />
                   +1 (587) 703-1010

@@ -14,7 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 const formSchema = z.object({
   name: z.string().min(2, "Please enter your name"),
   email: z.string().email("Please enter a valid email"),
-  phone: z.string().optional(),
+  phone: z.string().min(10, "Please enter your phone number"),
   service: z.enum(["Cabinets", "Countertops", "Basement finish out", "Not sure"]),
   message: z.string().min(10, "Please add a bit more detail"),
 });
@@ -194,15 +194,23 @@ export default function ContactPage() {
                     className="text-sm font-medium"
                     htmlFor="phone"
                   >
-                    Phone (optional)
+                    Phone
                   </label>
                   <Input
                     id="phone"
                     data-testid="input-phone"
-                    placeholder="+1 (587) 703-1010"
+                    placeholder="Your phone number"
                     className="mt-2"
                     {...form.register("phone")}
                   />
+                  {form.formState.errors.phone?.message ? (
+                    <div
+                      data-testid="status-error-phone"
+                      className="mt-2 text-xs text-[hsl(var(--destructive))]"
+                    >
+                      {form.formState.errors.phone.message}
+                    </div>
+                  ) : null}
                 </div>
 
                 <div>
@@ -291,17 +299,17 @@ export default function ContactPage() {
                 </a>
                 <a
                   data-testid="link-email"
-                  href="mailto:hello@galaxykitchencabinets.com"
+                  href="mailto:info@galaxycabinetsltd.com"
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 >
-                  <Mail className="h-4 w-4" /> hello@galaxykitchencabinets.com
+                  <Mail className="h-4 w-4" /> info@galaxycabinetsltd.com
                 </a>
-                <div
+                {/* <div
                   data-testid="text-location"
                   className="flex items-center gap-2 text-muted-foreground"
                 >
                   <MapPin className="h-4 w-4" /> Serving local homeowners
-                </div>
+                </div> */}
               </div>
 
               <div className="mt-6 rounded-2xl border bg-secondary p-4">
@@ -312,7 +320,9 @@ export default function ContactPage() {
                   Hours
                 </div>
                 <div data-testid="text-hours" className="mt-1 text-sm font-semibold">
-                  Mon–Fri · 8am–5pm
+                  Monday - Saturday
+                  <br />
+                  8:00 AM - 5:00 PM
                 </div>
               </div>
             </Card>
