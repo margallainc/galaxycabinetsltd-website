@@ -25,8 +25,8 @@ const SERVICES = [
   {
     title: "California Custom Closets",
     description:
-      "From framing to final trim—comfortable spaces that feel like the rest of your home.",
-    bullets: ["Drywall & paint", "Built-ins & storage", "Detail finishing"],
+      "From design to final installation, tailored storage solutions that maximize space and match your home.",
+    bullets: ["Built-in shelving", "Hanging and drawer systems", "Detail finishing"],
   },
 ] as const;
 
