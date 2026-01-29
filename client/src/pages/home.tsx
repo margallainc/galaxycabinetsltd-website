@@ -191,11 +191,11 @@ export default function HomePage() {
 
                 <a
                   data-testid="link-hero-phone"
-                  href="tel:+1-000-000-0000"
+                  href="tel:+1-587-703-1010"
                   className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground"
                 >
                   <Phone className="h-4 w-4" />
-                  (000) 000-0000
+                  +1 (587) 703-1010
                 </a>
               </div>
 
@@ -359,11 +359,11 @@ export default function HomePage() {
             <div className="flex flex-col gap-2 sm:items-end">
               <a
                 data-testid="link-mini-phone"
-                href="tel:+1-000-000-0000"
+                href="tel:+1-587-703-1010"
                 className="inline-flex items-center gap-2 text-sm font-semibold hover:underline"
               >
                 <Phone className="h-4 w-4" />
-                (000) 000-0000
+                +1 (587) 703-1010
               </a>
               <Link
                 href="/contact"

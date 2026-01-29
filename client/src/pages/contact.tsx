@@ -199,7 +199,7 @@ export default function ContactPage() {
                   <Input
                     id="phone"
                     data-testid="input-phone"
-                    placeholder="(000) 000-0000"
+                    placeholder="+1 (587) 703-1010"
                     className="mt-2"
                     {...form.register("phone")}
                   />
@@ -284,10 +284,10 @@ export default function ContactPage() {
               <div className="mt-4 space-y-3 text-sm">
                 <a
                   data-testid="link-phone"
-                  href="tel:+1-000-000-0000"
+                  href="tel:+1-587-703-1010"
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 >
-                  <Phone className="h-4 w-4" /> (000) 000-0000
+                  <Phone className="h-4 w-4" /> +1 (587) 703-1010
                 </a>
                 <a
                   data-testid="link-email"
