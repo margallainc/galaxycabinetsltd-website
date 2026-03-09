@@ -358,7 +358,7 @@ export default function ContactPage() {
                 Cabinets • Countertops • Custom Closets • TV Consoles
               </div>
             </div>
-            <div className="flex items-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center gap-4 text-sm">
               <Link
                 href="/"
                 data-testid="link-footer-home"
@@ -372,6 +372,20 @@ export default function ContactPage() {
                 className="text-muted-foreground hover:text-foreground"
               >
                 Portfolio
+              </Link>
+              <Link
+                href="/privacy-policy"
+                data-testid="link-footer-privacy"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms-of-service"
+                data-testid="link-footer-tos"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Terms of Service
               </Link>
             </div>
           </div>
