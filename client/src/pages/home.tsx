@@ -7,9 +7,9 @@ import { Card } from "@/components/ui/card";
 
 const SERVICES = [
   {
-    title: "Kitchen Cabinet Renovations",
+    title: "Kitchen Cabinet Renovations Calgary",
     description:
-      "Refresh, reface, or rebuild—tailored layouts, durable finishes, and clean installs.",
+      "Refresh, reface, or rebuild your Calgary kitchen—tailored layouts, durable finishes, and clean installs from a local Calgary team.",
     bullets: [
       "Design guidance",
       "Soft-close hardware",
@@ -17,15 +17,15 @@ const SERVICES = [
     ],
   },
   {
-    title: "Countertops",
+    title: "Countertops Calgary",
     description:
-      "Quartz, granite, and laminate options with precise templating and seamless fit.",
+      "Quartz, granite, and laminate countertops with precise templating and seamless fit. Serving Calgary kitchens and bathrooms.",
     bullets: ["Template & install", "Backsplash-ready edges", "Care guidance"],
   },
   {
-    title: "California Custom Closets",
+    title: "Custom Closets Calgary",
     description:
-      "From design to final installation, tailored storage solutions that maximize space and match your home.",
+      "From design to final installation, tailored Calgary closet solutions that maximize space and match your home's style.",
     bullets: ["Built-in shelving", "Hanging and drawer systems", "Detail finishing"],
   },
 ] as const;
@@ -155,22 +155,30 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge>Cabinets • Countertops • Custom Closets</Badge>
+              <Badge>Calgary Cabinets • Countertops • Custom Closets</Badge>
 
               <h1
                 data-testid="text-hero-title"
                 className="mt-5 text-balance font-serif text-4xl leading-[1.05] tracking-tight sm:text-5xl"
               >
-                Renovations that feel custom—because they are.
+                Kitchen Cabinet Renovations in Calgary, AB
               </h1>
+
+              <p
+                data-testid="text-hero-tagline"
+                className="mt-2 font-serif text-xl text-muted-foreground italic"
+              >
+                Renovations that feel custom—because they are.
+              </p>
 
               <p
                 data-testid="text-hero-subtitle"
                 className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base"
               >
-                Galaxy Kitchen Cabinets Ltd. delivers clean installs, thoughtful details,
-                and finishes that hold up. We specialize in kitchen cabinet renovations,
-                countertops, Custom Closets, and TV console renovations.
+                Calgary homeowners trust Galaxy Kitchen Cabinets Ltd. for clean installs and
+                thoughtful craftsmanship. We specialize in kitchen cabinet renovations, quartz
+                and granite countertops, custom closets, and TV console builds—right here in
+                Calgary, AB.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -238,7 +246,7 @@ export default function HomePage() {
               <img
                 data-testid="img-hero"
                 src={heroImage}
-                alt="Modern kitchen renovation"
+                alt="Kitchen cabinet renovation Calgary, AB — Galaxy Kitchen Cabinets"
                 className="h-[340px] w-full object-contain sm:h-[420px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-black/0" />
@@ -261,9 +269,9 @@ export default function HomePage() {
 
         <section data-testid="section-services" className="mt-18 sm:mt-22">
           <SectionTitle
-            eyebrow="Services"
-            title="Built around your space"
-            subtitle="Three core offerings, one standard: clean work, durable materials, and a result that feels intentional."
+            eyebrow="Services in Calgary, AB"
+            title="Calgary Cabinet & Renovation Services"
+            subtitle="Three core services, one standard: clean work, durable materials, and a result that feels intentional. Proudly serving Calgary homeowners."
           />
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -311,14 +319,14 @@ export default function HomePage() {
                     data-testid="text-cta-title"
                     className="text-balance font-serif text-2xl tracking-tight sm:text-3xl"
                   >
-                    Ready to upgrade your kitchen or closets?
+                    Ready to upgrade your Calgary kitchen or closets?
                   </h3>
                   <p
                     data-testid="text-cta-subtitle"
                     className="mt-2 max-w-2xl text-sm text-white/80"
                   >
                     Tell us what you're building. We'll respond with next steps and a clear path
-                    from idea to finish.
+                    from idea to finish—serving homeowners across Calgary, AB.
                   </p>
                 </div>
                 <div className="md:col-span-4 md:flex md:justify-end">
@@ -388,6 +396,15 @@ export default function HomePage() {
               >
                 Cabinets • Countertops • Custom Closets • TV Consoles
               </div>
+              <address
+                data-testid="text-footer-address"
+                className="mt-1 text-xs text-muted-foreground not-italic"
+              >
+                Calgary, AB, Canada &nbsp;·&nbsp;
+                <a href="tel:+1-587-703-1010" className="hover:text-foreground">
+                  (587) 703-1010
+                </a>
+              </address>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm">
               <Link

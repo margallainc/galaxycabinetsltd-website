@@ -56,6 +56,13 @@ export function metaImagesPlugin(): Plugin {
 }
 
 function getDeploymentUrl(): string | null {
+  // Prefer an explicit custom domain env var if set
+  if (process.env.SITE_DOMAIN) {
+    const url = `https://${process.env.SITE_DOMAIN}`;
+    log('[meta-images] using SITE_DOMAIN:', url);
+    return url;
+  }
+
   if (process.env.REPLIT_INTERNAL_APP_DOMAIN) {
     const url = `https://${process.env.REPLIT_INTERNAL_APP_DOMAIN}`;
     log('[meta-images] using internal app domain:', url);
@@ -68,7 +75,9 @@ function getDeploymentUrl(): string | null {
     return url;
   }
 
-  return null;
+  // Fall back to the production custom domain so OG image is always absolute
+  log('[meta-images] falling back to production domain: galaxycabinetsltd.com');
+  return 'https://galaxycabinetsltd.com';
 }
 
 function log(...args: any[]): void {
