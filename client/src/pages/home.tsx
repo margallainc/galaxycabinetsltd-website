@@ -7,9 +7,9 @@ import { Card } from "@/components/ui/card";
 
 const SERVICES = [
   {
-    title: "Kitchen Cabinet Renovations Calgary",
+    title: "Kitchen Cabinet Renovations",
     description:
-      "Refresh, reface, or rebuild your Calgary kitchen—tailored layouts, durable finishes, and clean installs from a local Calgary team.",
+      "Refresh, reface, or rebuild your kitchen—tailored layouts, durable finishes, and clean installs from a local team.",
     bullets: [
       "Design guidance",
       "Soft-close hardware",
@@ -17,15 +17,15 @@ const SERVICES = [
     ],
   },
   {
-    title: "Countertops Calgary",
+    title: "Countertops",
     description:
-      "Quartz, granite, and laminate countertops with precise templating and seamless fit. Serving Calgary kitchens and bathrooms.",
+      "Quartz, granite, and laminate countertops with precise templating and seamless fit. Serving kitchens and bathrooms.",
     bullets: ["Template & install", "Backsplash-ready edges", "Care guidance"],
   },
   {
-    title: "Custom Closets Calgary",
+    title: "Custom Closets",
     description:
-      "From design to final installation, tailored Calgary closet solutions that maximize space and match your home's style.",
+      "From design to final installation, tailored closet solutions that maximize space and match your home's style.",
     bullets: ["Built-in shelving", "Hanging and drawer systems", "Detail finishing"],
   },
 ] as const;
@@ -319,7 +319,7 @@ export default function HomePage() {
                     data-testid="text-cta-title"
                     className="text-balance font-serif text-2xl tracking-tight sm:text-3xl"
                   >
-                    Ready to upgrade your Calgary kitchen or closets?
+                    Ready to upgrade your kitchen or closets?
                   </h3>
                   <p
                     data-testid="text-cta-subtitle"
